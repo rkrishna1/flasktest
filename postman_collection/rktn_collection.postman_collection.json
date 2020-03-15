@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "92a052f2-2cc5-436c-8958-37d4c5fa5246",
+		"name": "rktn_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/upload_content",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/rkrishna/Videos/Video1.mp4"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/upload_content",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"upload_content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/packaged_content/73150fd0-6681-11ea-ba5b-3376cbf72672",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/packaged_content/73150fd0-6681-11ea-ba5b-3376cbf72672",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"packaged_content",
+						"73150fd0-6681-11ea-ba5b-3376cbf72672"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/packaged_content",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "input_content_id",
+							"value": "b975383a-66ed-11ea-98e7-0242ac110003",
+							"type": "text"
+						},
+						{
+							"key": "key",
+							"value": "87237D20A19F58A740C05684E699B4AA",
+							"type": "text"
+						},
+						{
+							"key": "keyid",
+							"value": "A16E402B9056E371F36D348AA62BB749",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/packaged_content",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"packaged_content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/content/73150fd0-6681-11ea-ba5b-3376cbf72672/parts/stream.mpd",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/content/73150fd0-6681-11ea-ba5b-3376cbf72672/parts/stream.mpd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"content",
+						"73150fd0-6681-11ea-ba5b-3376cbf72672",
+						"parts",
+						"stream.mpd"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
