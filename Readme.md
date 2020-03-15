@@ -1,4 +1,4 @@
-# Python Flask App to process video for DASH Streaming
+# Test app Streaming
 
 
 1. Folder app has all the key components
